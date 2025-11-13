@@ -1,0 +1,99 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+h1 {
+    color: #1a2b4d;
+}
+
+.game-container {
+    margin: 20px;
+}
+
+#puzzle-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    border: 3px solid #333;
+    background-color: #fdfdfd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4a77d4;
+    border: 1px solid #fff;
+    box-sizing: border-box; /* Important for grid */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tile:hover {
+    background-color: #6a93f4;
+}
+
+.tile.empty {
+    background-color: #fdfdfd;
+    cursor: default;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.controls button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+#solve-btn {
+    background-color: #28a745;
+}
+#solve-btn:hover {
+    background-color: #218838;
+}
+#solve-btn:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+#status-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Style for the 'Back to Main Menu' link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
