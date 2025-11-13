@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Puzzle Solver (BFS)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/8puzzle.css') }}">
+</head>
+<body>
+    <h1>AI 8-Puzzle Solver (BFS)</h1>
+    <a href="/" class="back-link">&larr; Back to Main Menu</a>
+    
+    <p>Click a tile next to the empty space to move it. Try to solve it yourself!</p>
+    
+    <div class="game-container">
+        <div id="puzzle-board"></div>
+    </div>
+    
+    <div class="controls">
+        <button id="new-game-btn">New Game</button>
+        <button id="solve-btn">Show AI Solution (BFS)</button>
+    </div>
+    
+    <div id="status-message"></div>
+
+    <script src="{{ url_for('static', filename='js/8puzzle.js') }}"></script>
+</body>
+</html>

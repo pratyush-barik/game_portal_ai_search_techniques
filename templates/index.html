@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Search Project Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="portal-container">
+        <h1>AI Search Algorithm Projects</h1>
+        <p>Please select a game to play:</p>
+        
+        <div class="game-menu">
+            <a href="/8puzzle" class="game-link">
+                <div class="game-card">
+                    <h2>8-Puzzle Solver</h2>
+                    <p>Algorithm: Breadth-First Search (BFS)</p>
+                </div>
+            </a>
+            
+            <a href="/sudoku" class="game-link">
+                <div class="game-card">
+                    <h2>Sudoku Solver</h2>
+                    <p>Algorithm: DFS / Backtracking</p>
+                </div>
+            </a>
+            
+            <a href="/snake" class="game-link">
+                <div class="game-card">
+                    <h2>AI Snake</h2>
+                    <p>Algorithm: A* Search</p>
+                </div>
+            </a>
+            
+            <a href="/hanoi" class="game-link">
+                <div class="game-card">
+                    <h2>Tower of Hanoi</h2>
+                    <p>Algorithm: DFS / Recursion</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

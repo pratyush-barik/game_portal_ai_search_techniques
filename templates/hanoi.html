@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi (DFS)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hanoi.css') }}">
+</head>
+<body>
+    <h1>Tower of Hanoi (DFS / Recursion)</h1>
+    <a href="/" class="back-link">&larr; Back to Main Menu</a>
+
+    <div class="controls">
+        <label for="disk-slider">Number of Disks: <span id="disk-count">4</span></label>
+        <input type="range" id="disk-slider" min="3" max="8" value="4">
+        <button id="start-btn">Start / Reset</button>
+        <button id="solve-btn">Show AI Solution (DFS)</button>
+    </div>
+    
+    <div id="hanoi-container">
+        <div class="tower" id="tower-A" data-peg="A">
+            <div class="peg"></div>
+            </div>
+        <div class="tower" id="tower-B" data-peg="B">
+            <div class="peg"></div>
+        </div>
+        <div class="tower" id="tower-C" data-peg="C">
+            <div class="peg"></div>
+        </div>
+    </div>
+    
+    <div id="status-message"></div>
+
+    <script src="{{ url_for('static', filename='js/hanoi.js') }}"></script>
+</body>
+</html>

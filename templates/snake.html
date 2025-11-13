@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Snake (A*)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/snake.css') }}">
+</head>
+<body>
+    <h1>AI Snake (A* Search)</h1>
+    <a href="/" class="back-link">&larr; Back to Main Menu</a>
+
+    <div class="controls">
+        <button id="start-btn">Start Game (User Control)</button>
+        <button id="solve-btn">Find Path (A*)</button>
+        <button id="auto-btn">Run AI Bot (A*)</button>
+    </div>
+    
+    <canvas id="game-canvas" width="400" height="400"></canvas>
+    
+    <div id="status-message">Score: 0</div>
+
+    <script src="{{ url_for('static', filename='js/snake.js') }}"></script>
+</body>
+</html>

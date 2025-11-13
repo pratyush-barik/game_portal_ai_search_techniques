@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver (DFS)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sudoku.css') }}">
+</head>
+<body>
+    <h1>Sudoku Solver (DFS / Backtracking)</h1>
+    <a href="/" class="back-link">&larr; Back to Main Menu</a>
+
+    <div id="sudoku-board">
+        </div>
+    
+    <div class="controls">
+        <button id="new-game-btn">New Puzzle</button>
+        <button id="solve-btn">Show AI Solution (DFS)</button>
+        <button id="check-btn">Check My Solution</button>
+    </div>
+    
+    <div id="status-message"></div>
+
+    <script src="{{ url_for('static', filename='js/sudoku.js') }}"></script>
+</body>
+</html>
